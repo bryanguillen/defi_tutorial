@@ -3,6 +3,11 @@ pragma solidity ^0.5.0;
 contract DappToken {
     string  public name = "DApp Token";
     string  public symbol = "DAPP";
+    /*
+     * 1 million looks like this b/c within ETH, the numbers work different.
+     * See that there are 18 decimals, thus, 1 DAPP looks like 1000000000000000000.
+     * Now, you multiply that by 1 mill, and you get your answer.
+     */
     uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
     uint8   public decimals = 18;
 

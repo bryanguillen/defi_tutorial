@@ -1,3 +1,7 @@
+/**
+ * @description configuration file for truffle
+ */
+
 require('babel-register');
 require('babel-polyfill');
 
@@ -9,6 +13,10 @@ module.exports = {
       network_id: "*" // Match any network id
     },
   },
+  /**
+   * Note: Following two properties are different from convention for the
+   * purpose of the tutorial
+   */
   contracts_directory: './src/contracts/',
   contracts_build_directory: './src/abis/',
   compilers: {
